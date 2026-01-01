@@ -2,7 +2,6 @@
 #include <ncfw.hpp>
 
 int main (int argc, char *argv[]) {
-	{
 	nterm nt;
 	nwindow nw(&nt, {2,2}, {COLS - 4, LINES - 4});
 
@@ -23,9 +22,6 @@ int main (int argc, char *argv[]) {
 	b->set_z_index(-2);
 
 	nw.draw_all();
-	
-	while (true) {}
-	}
 
 	return 0;
 }

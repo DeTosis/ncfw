@@ -14,6 +14,10 @@ TextContent::TextContent(
 	draw_text();
 }
 
+TextContent::~TextContent() {
+	delwin(m_wnd);
+}
+
 void TextContent::refresh() {
 	wrefresh(m_wnd);
 }

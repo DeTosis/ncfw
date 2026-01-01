@@ -25,6 +25,7 @@ public:
 			IVec2 parrent_origin, IVec2 parrent_size,
 			IVec2 text_pos, IVec2 text_size, 
 			const char* src_text);
+	~TextContent();
 	void refresh();
 	TextContent* format(int hor, int vert);
 	void format(IVec2 pos);

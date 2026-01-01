@@ -61,6 +61,10 @@ WndChild::WndChild(IVec2 pos, IVec2 size) {
 	m_wnd = newwin(size.y, size.x, pos.y, pos.x);
 }
 
+WndChild::~WndChild() {
+	delwin(m_wnd);
+}
+
 void WndChild::add_box(chtype verch, chtype horch) const {
 	box(m_wnd, verch, horch);
 }
